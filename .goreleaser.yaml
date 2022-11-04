@@ -2,7 +2,8 @@ before:
   hooks:
     - go mod tidy
 builds:
-  - binary: kubectl-dds
+  - id: kubectl-dds
+    binary: kubectl-dds
     env:
       - CGO_ENABLED=0
     goos:
